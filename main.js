@@ -117,6 +117,7 @@ const minus = document.querySelector('#minus');
 minus.addEventListener('click', () => {
     if (operation.length === 0) { // check if the first number is a negative number
         screen.textContent = "-";
+        subscreen.textContent = "-";
     }
     else {
         operation.push(screen.textContent);
@@ -199,4 +200,22 @@ const point = document.querySelector("#point");
 point.addEventListener('click', ()  => {
     screen.textContent += ".";
     subscreen.textContent += ".";
+});
+
+
+// delete button
+const del = document.querySelector('.del');
+del.addEventListener('click', () => {
+    let content = subscreen.textContent;
+    console.log(content);
+    content = content.slice(0, -1);
+    screen.textContent = content;
+    subscreen.textContent = content;
+});
+
+//clear both screens
+const clear = document.querySelector('.clear');
+clear.addEventListener('click', () => {
+    screen.textContent = "";
+    subscreen.textContent = "";
 });
