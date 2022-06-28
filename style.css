@@ -1,0 +1,30 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 300px;
+    height: 300px;
+}
+
+.screen {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: aqua;
+}
+
+.subscreen {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: beige;
+}
+
+.gridItem {
+    text-align: center;    
+}
+
+
+#equals {
+    /*grid-column-start: 4;
+    grid-column-end: 2;*/
+    background-color: blue;
+    color: white;
+}
