@@ -218,4 +218,5 @@ const clear = document.querySelector('.clear');
 clear.addEventListener('click', () => {
     screen.textContent = "";
     subscreen.textContent = "";
+    operation = [];
 });
